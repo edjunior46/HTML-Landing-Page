@@ -1,0 +1,222 @@
+@font-face {
+    font-family: "Herborn";
+    src: url(./fonts/Herborn.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Herborn", sans-serif;
+    user-select: none;
+}
+
+body {
+    background: #F6F6F6;
+}
+
+#navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 8vh;
+    font-size: 1.5rem;
+    background: #F6F6F6;
+}
+
+#navList {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#navList a {
+    text-decoration: none;
+    color: #222222;
+}
+
+#navList li {
+    margin-right: 20px;
+}
+
+#logoImg {
+    height: 2rem;
+    margin-left: 20px;
+}
+
+section {
+    height: 100vh;
+    padding: calc(8vh + 20px) 20px 20px;
+}
+
+#mainSection {
+    background: url(./img/product1.webp);
+    background-position: 250% 65%;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: justify;
+}
+
+#mainTitle {
+    font-size: 6rem;
+    color: #3a5dbd;
+    text-shadow: 3px 3px #ffdc17;
+    margin-bottom: 20px;
+}
+
+#mainTxt {
+    font-size: 1.5rem;
+    width: 780px;
+    text-align: end;
+}
+
+#aboutSection {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#aboutTitle {
+    font-size: 4rem;
+    color: #3a5dbd;
+    text-shadow: 3px 3px #ffdc17;
+    text-align: center;
+}
+
+#aboutSection img {
+    width: 800px;
+    margin: 20px auto;
+}
+
+#aboutTxt {
+    font-size: 1.5rem;
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+}
+
+.productDiv {
+    height: 50%;
+    display: grid;
+}
+
+.productDiv:first-of-type {
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.productDiv:last-of-type {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.productTxt{
+    background-color: #3a5dbd;
+    padding: 20px;
+    font-size: 2rem;
+    color: #ffdc17;
+    text-align: end;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.productImg1 {
+    background: url(./img/product4.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.productImg2 {
+    background: url(./img/product3.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.productImg3 {
+    background: url(./img/product5.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.productLogo {
+    background-color: #ffdc17;
+    background-image: url(./img/logo.webp);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    background: url(./img/product6.webp);
+    background-repeat: no-repeat;
+    background-position-x: 110%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.footer img {
+    width: 50%;
+}
+
+@media screen and (min-width: 960px) and (max-width: 1070px) {
+    #mainTitle {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (min-width: 820px) and (max-width: 959px) {
+    #mainTitle {
+        font-size: 4rem;
+    }
+
+    #mainTxt {
+        font-size: 1.5rem;
+    }
+
+    #aboutTitle {
+        font-size: 3rem;
+    }
+
+    #aboutTxt {
+        font-size: 1.2rem;
+    }
+
+    .productTxt {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 819px) {
+    #mainSection {
+        align-items: center;
+    }
+
+    #mainTxt {
+        width: 80%;
+        text-align: justify;
+    }
+
+    #mainTitle {
+        font-size: 4rem;
+    }
+
+    #aboutTxt {
+        font-size: 1.3rem;
+    }
+
+    #aboutSection img {
+        width: 600px;
+    }
+
+    .productTxt {
+        font-size: 1.3rem;
+    }
+}
